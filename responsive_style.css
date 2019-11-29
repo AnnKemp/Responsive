@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-align: justify;
+    background-color: lightblue;
+    padding:1%;
+}
+div{
+    max-width:31%;
+    float:left;
+    position: relative;
+    padding:1em;
+    margin:1%;
+}
+.small{
+    background-color: chartreuse;
+}
+.medium{
+    background-color: dodgerblue;
+    /*om deze niet af te tonen*/
+    /*display: none;*/
+}
+.large{
+    background-color: brown;
+    /*om deze niet af te tonen*/
+    /*display: none;*/
+}
+H2{
+    font-size: 1.7em;
+}
+H6{
+    font-size: 1em;
+}
+@media screen and (max-width: 768px) {
+body{
+        background-color: green;
+        font-size: 0.9em;
+    }
+
+.small{
+    max-width:60%;
+    /*display: none;*/
+    }
+.medium{
+    max-width:30%;
+    }
+.large{
+    max-width:92%;
+    /*display: none;*/
+    }
+}
+@media screen and (max-width: 300px) {
+
+body{
+        background-color:red;
+        font-size: 0.8em;
+        padding:0;
+        margin:0;
+
+    }
+div{
+        min-width: 100%;
+        margin:0;
+    }
+/*om er maar eentje af te tonen*/
+.medium, .large{
+    /*display: none;*/
+}
+}
